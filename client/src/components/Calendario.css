@@ -1,0 +1,10 @@
+button {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+/* button:hover {
+  background-color: blue;
+  color: white;
+} */

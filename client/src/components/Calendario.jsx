@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import reactDom from "react-dom";
+import "./Calendario.css";
 
 class Customers extends Component {
   constructor() {
@@ -34,16 +35,20 @@ class Customers extends Component {
 }
 
 function Calendario() {
+  function shoot() {
+    alert("You have struck the day!");
+  }
   return (
     <div>
       <h1>Winning Streak</h1>
-
       <table class="days">
         <tr>
           <h3 class="month">May</h3>
         </tr>
         <tr>
+          <span role="img" aria-label="sheep"></span>
           <td></td>
+          <button onClick={shoot}>🦁</button>
           <td>1</td>
           <td>2</td>
           <td>3</td>

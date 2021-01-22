@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Customers from "./components/customers/customers";
 import Calendario from "./components/Calendario";
+import Shoot from "./components/Shoot";
 
 function App() {
   return (

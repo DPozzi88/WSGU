@@ -19,7 +19,11 @@ const port = 5000;
 app.listen(port, () => console.log("Server started on port " + port));
 
 const taskSchema = new mongoose.Schema({
-  giorno: Number,
+  giorno: {
+    type: Number,
+    min: 1,
+    max: 31,
+  },
   valore: {
     type: Number,
     min: 0,
