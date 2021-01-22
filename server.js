@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/reactexpress", {
+mongoose.connect("mongodb://localhost:27017/WSGU", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
@@ -31,10 +31,10 @@ const Task = mongoose.model("Task", taskSchema);
 
 const task = new Task({
   giorno: 1,
-  valore: 6,
+  valore: 50,
 });
 
-task.save();
+//task.save();
 
 app.get("/api/customers", (req, res) => {
   Task.find({}, function (err, foundTasks) {
