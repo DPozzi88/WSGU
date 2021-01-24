@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { useTable } from "react-table";
+import Day from "./Day";
 
 function Table() {
   return (
     <div>
-      <table>
+      <Day day="&nbsp;" row1="Riordino" row2="Yoga" row3="Coding" />
+      <Day day="1" row1="🦁" row2="🧘🏼‍♂️" row3="👨‍💻" />
+      <Day day="2" row1="🦁" row2="🧘🏼‍♂️" row3="👨‍💻" />
+      {/* <table>
         <tr>
           <td></td>
           <td>1</td>
@@ -37,7 +41,7 @@ function Table() {
             <button>👨‍💻</button>
           </td>
         </tr>
-      </table>
+      </table> */}
     </div>
   );
 }
