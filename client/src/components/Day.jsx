@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 
 function Day(props) {
   return (
-    <td>
-      <tr>{props.day}</tr>
-      <tr>{props.row1}</tr>
-      <tr>{props.row2}</tr>
-      <tr>{props.row3}</tr>
-    </td>
+    <tr>
+      <td>{props.day}</td>
+      <td>{props.row1}</td>
+      <td>{props.row2}</td>
+      <td>{props.row3}</td>
+    </tr>
   );
 }
 

@@ -49,3 +49,72 @@ app.get("/api/customers", (req, res) => {
     }
   });
 });
+
+// });
+
+// function Streak() {
+//   const taskSchema = new mongoose.Schema({
+//     //forse "mongoose." si puà ometterE?" https://mongoosejs.com/docs/schematypes.html#arrays
+//     Day: Array,
+//     Riordino: Array,
+//     Yoga: Array,
+//     Coding: Array,
+//   });
+
+//   // function Streak() {
+//   //   const taskSchema = new mongoose.Schema({
+//   //     day: {
+//   //       type: String,
+//   //       min: 1,
+//   //       max: 31,
+//   //     },
+//   //     row1: {
+//   //       type: String,
+//   //       // min: 0,
+//   //       // max: 100,
+//   //     },
+//   //     row2: {
+//   //       type: String,
+//   //       // min: 0,
+//   //       // max: 100,
+//   //     },
+//   //     row3: {
+//   //       type: String,
+//   //       // min: 0,
+//   //       // max: 100,
+//   //     },
+//   //   });
+
+//   const Task = mongoose.model("Task", taskSchema);
+
+//   // const task = new Task({
+//   //   day: "",
+//   //   row1: "Riordino",
+//   //   row2: "Yoga",
+//   //   row3: "Coding",
+//   // });
+
+//   const task = new Task({
+//     Day: Array,
+//     Riordino: Array,
+//     Yoga: Array,
+//     Coding: Array,
+
+//     day: "1",
+//     row1: "🦁",
+//     row2: "🧘🏼‍♂️",
+//     row3: "👨‍💻",
+//   });
+
+//   task.save();
+// }
+
+// app.get("/api/customers", (req, res) => {
+//   Task.find({}, function (err, foundTasks) {
+//     if (foundTasks.length === 0) {
+//       console.log("Successfully zero");
+//     } else {
+//       res.json(foundTasks);
+//     }
+//   });
+// });
