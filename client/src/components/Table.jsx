@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { useTable } from "react-table";
-import Day from "./Day";
+import { Day } from "./Day";
 
 const days = [
-  { id: "date", uno: "1", due: "2" },
+  { id: "prova", uno: "1", due: "2" },
   { id: "riordino", uno: "🦁", due: "🦁" },
+  { id: "scorte", uno: "🦋", due: "🦋" },
   { id: "yoga", uno: "🧘🏼‍♂️", due: "🧘🏼‍♂️" },
   { id: "coding", uno: "👨‍💻", due: "👨‍💻" },
 ];

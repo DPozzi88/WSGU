@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.13",
+    "react-fetch": "0.0.9",
     "react-table": "^7.6.3"
   },
   "devDependencies": {

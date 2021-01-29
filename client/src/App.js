@@ -1,8 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Customers from "./components/customers/customers";
 import Calendario from "./components/Calendario";
-import Shoot from "./components/Shoot";
+import FetchRandomUser from "./components/FetchRandomUser";
 
 function App() {
   return (
@@ -10,7 +9,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {/* <Customers /> */}
-        <Calendario />
+        {/* <Calendario /> */}
+        <FetchRandomUser />
       </header>
     </div>
   );

@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const { MongoClient } = require("mongodb");
 const mongoose = require("mongoose");
+const _ = require("lodash");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -15,8 +16,6 @@ mongoose.connect("mongodb://localhost:27017/WSGU", {
 const connection = mongoose.connection;
 
 const port = 5000;
-
-app.listen(port, () => console.log("Server started on port " + port));
 
 const streakSchema = new mongoose.Schema({
   //forse "mongoose." si puà ometterE?" https://mongoosejs.com/docs/schematypes.html#arrays
@@ -50,10 +49,19 @@ app.get("/api/customers", (req, res) => {
     if (foundStreaks.length === 0) {
       console.log("Successfully zero");
     } else {
-      res.json(foundStreaks);
+      Streak.find({}, function (err, foundStreaks) {
+        res.json(foundStreaks);
+        console.log(foundStreaks);
+      });
+      //res.json(foundStreaks);
+      //console.log(foundStreaks);
+      // res.redirect("/api/customers");
+      //res.render("list", { listTitle: "streak", newListItems: foundStreaks });
     }
   });
 });
+
+app.listen(port, () => console.log("Server started on port " + port));
 
 // const taskSchema = new mongoose.Schema({
 //   giorno: {

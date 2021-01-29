@@ -1,27 +1,16 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-
-const days = ["1", "2", "3", "4", "5", "6"];
-const riordino = ["🦁", "🦁", "🦁", "🦁", "🦁", "🦁"];
-const yoga = ["🧘🏼‍♂️", "🧘🏼‍♂️", "🧘🏼‍♂️", "🧘🏼‍♂️", "🧘🏼‍♂️", "🧘🏼‍♂️"];
-const coding = ["👨‍💻", "👨‍💻", "👨‍💻", "👨‍💻", "👨‍💻", "👨‍💻"];
+import React, { useState } from "react";
 
 function Day(props) {
+  function handleClick() {
+    alert(props.key);
+  }
+
   return (
     <div>
-      <table>
-        <tr>
-          <td>{props.uno}</td>
-          <td>
-            <button>{props.uno}</button>
-          </td>
-          <td>
-            <button>{props.due}</button>
-          </td>
-        </tr>
-      </table>
+      <button onClick={handleClick}>{props.uno}</button>
+      <button onClick={handleClick}>{props.due}</button>
     </div>
   );
 }
 
-export default Day;
+export { Day };
